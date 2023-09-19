@@ -1,0 +1,172 @@
+.accordion-header{
+    .side-icon{
+        width: 30px;
+        height: 30px;
+        background-color: $primary;
+        color: #fff;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+    }
+}
+.accordion-item.in{
+        box-shadow: 0 0 9.7px 0.3px rgba(232, 228, 228, 68%);
+    }
+    .accordion-header.collapsed {
+        h3{
+            color: #cdcdcf;
+    }
+}
+
+.booking-date-time {
+
+    .accordion-line{
+        position: absolute;
+        border-left: 1px dashed #282c3f;
+        top: 35px;
+        left: 15px;
+        bottom: 0;
+    }
+
+    .table-condensed{
+        width: 100%;
+    }
+
+    .datepicker-inline {
+        width: 100%;
+        background-color: $secondary;
+        padding: 10px 14px;
+        border-radius: 4px;
+    }
+
+    .datepicker td, .datepicker th {
+        width: 40px;
+        height: 40px;
+    }
+
+    .day, .dow{
+        font-size: 12px;
+    }
+
+    .datepicker-switch{
+        font-size: 15px;
+    }
+
+    table tr td.active.active, .datepicker table tr td span.active.active{
+        background-color: #0075ff !important;
+        background-image: none !important;
+    }
+
+    ul {
+
+        padding: initial;
+        padding-top: 14px;
+
+        li{
+            display: inline-block;
+            margin-bottom: 16px;
+            width: 32.414%;
+
+            // @include media-breakpoint-down(xl){
+            //     width: 48.414%;
+            // }
+
+            &:before{
+                content: none;
+            }
+
+            label{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.cart-summary{
+    th{
+        padding: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #f4f4f7;
+    }
+    td{
+        padding: 20px;
+        font-size: 13px;
+    }
+    .input-group{
+        height: 28px;
+        width: 119px;
+
+        input{
+            height: 25px !important;
+            width: 15px;
+            font-size: 11px;
+            text-align: center;
+            min-height: 25px;
+        }
+
+        .input-group-btn button{
+            height: 26px;
+            line-height: 0.3;
+            background-color: #f4f4f7;
+            padding: 0px 7px;
+        }
+    }
+
+    .trash-item:hover{
+        color: $red;
+    }
+}
+
+.checkout{
+    p a:hover{
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+.payment{
+    .accordion-body i{
+        font-size: 40px;
+    }
+}
+
+#coupon {
+    .modal-content{
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+    .modal-header{
+        position: sticky;
+        top: 0;
+        display: block;
+        width: auto;
+        background-color: white;
+        z-index: 1;
+        border-bottom: $grey-border-bottom;
+    }
+    .modal-footer{
+        position: sticky;
+        bottom: 0;
+        display: block;
+        width: auto;
+        background-color: white;
+        border-top: $grey-border-top;
+    }
+}
+
+@include media-breakpoint-down(sm){
+    .footer-bottom{
+        margin-bottom: 55px;
+    }
+}
+
+.mobile-cart{
+    position: fixed;
+    bottom: 0px;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: 0 0 9.7px 0.3px rgba(232, 228, 228, 68%);
+}

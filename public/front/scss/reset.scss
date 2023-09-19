@@ -1,0 +1,158 @@
+body{
+  font-size: 14px;
+  font-family: $opensans;
+  background-color: $white;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.14;
+  color: $primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include media-breakpoint-down(sm){
+    font-size: 12px;
+  }
+}
+
+/*===== custom scrollbar ====== */
+::-webkit-scrollbar {
+  width: 5px;
+  background:#dddcdc;
+  height: 50px;
+
+  @include media-breakpoint-down(sm){
+    height: 5px;
+  }
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $primary ;
+}
+
+::-moz-selection {
+  background: #222;
+  color: $white;
+}
+
+::selection {
+  background: #222;
+  color: $white;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover{
+    outline: 0 none;
+    text-decoration: none;
+    color: $primary !important;
+    transition: all 0.3s ease;
+  }
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+ul li{
+  text-decoration: none;
+  margin: 0;
+  // padding: 0;
+  list-style: none;
+  line-height: 2;
+
+  &:before{
+      content: "\f270";
+      display: inline-block;
+      font-family: bootstrap-icons !important;
+      font-style: normal;
+      font-weight: normal !important;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1.2;
+      vertical-align: text-bottom;
+      -webkit-font-smoothing: antialiased;
+      margin-left: -20px;
+      margin-right: 10px;
+      color: #1e1e1e;
+      font-size: 15px;
+    }
+}
+p {
+  line-height: 2;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+span {
+  color: inherit;
+}
+i {
+  line-height: 1;
+  font-style: normal;
+}
+
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+iframe {
+  border: none;
+}
+
+:active,
+:focus {
+  outline: none !important;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* ===== Headings ====== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 30px;
+}
+h3{
+  font-size: 25px;
+
+  @include media-breakpoint-down(md){
+    font-size: 18px;
+  }
+}
+h4{
+  font-size: 20px;
+
+  @include media-breakpoint-down(md){
+    font-size: 16px;
+  }
+}
+h5{
+  font-size: 17px;
+}
+h6{
+  font-size: 16px;
+
+  @include media-breakpoint-down(md){
+      font-size: 10px;
+  }
+}
+
+hr{
+  background-color: $text-light;
+}

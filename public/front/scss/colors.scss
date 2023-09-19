@@ -1,0 +1,47 @@
+.text-primary{
+    color: $primary !important;
+}
+
+.text-light{
+    color: $text-light !important;
+}
+
+.text-grey{
+    color: $text-grey;
+}
+
+.text-red{
+    color: $red;
+}
+
+.text-green{
+    color: $green !important;
+}
+
+.bg-primary{
+    background-color: $primary !important;
+}
+
+.bg-secondary{
+    background-color: $secondary !important;
+}
+
+.bg-green{
+    background-color: $green !important;
+}
+
+.grey-border{
+    border: $grey-border !important;
+}
+
+.grey-border-top{
+    border-top: $grey-border;
+}
+
+.grey-border-left{
+    border-left: $grey-border-left;
+}
+
+.black-border-top{
+    border-top: $black-border-top;
+}

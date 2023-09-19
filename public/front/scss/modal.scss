@@ -1,0 +1,20 @@
+.modal-content{
+    border: none;
+
+    @include media-breakpoint-down(lg){
+        border-radius: 0;
+        height: 100% !important;
+    }
+}
+
+@include media-breakpoint-down(lg){
+    .modal-dialog{
+        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+        height: 100%;
+    }
+    .deal-input {
+        width: 50% !important;
+    }
+}

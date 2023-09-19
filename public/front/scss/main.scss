@@ -1,0 +1,50 @@
+//BOOTSTRAP
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//VARIABLES
+@import "variables";
+
+//CUSTOM FOR FONTS
+@import "custom";
+
+//RESET FOR COMMON
+@import "reset";
+
+//COLORS
+@import "colors";
+
+//STYLE
+@import "style";
+
+//FORM
+@import "form";
+
+//TYPOGRAPHY
+@import "typography";
+
+//HEADER
+@import "header";
+
+//BUTTON
+@import "btn";
+
+//MIXIN
+@import "mixin";
+
+//LOGIN
+@import "login";
+
+//SERVICE
+@import "service";
+
+//BOOKING
+@import "booking";
+
+//MODAL
+@import "modal";
+
+//CONTACT
+@import "contact";
+
+
+

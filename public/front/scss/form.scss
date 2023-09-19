@@ -1,0 +1,87 @@
+.form-control {
+    border: none;
+    box-shadow: none;
+    // transition: all .3s ease;
+    background-color: $secondary;
+    color: $primary;
+    position: relative;
+    padding: 0px 18px 0px;
+    height: 46px;
+    &:focus,
+    &:hover{
+      border: none;
+      box-shadow: none;
+      background-color: $secondary;
+    }
+
+    @include media-breakpoint-down(lg){
+        height: 35px !important;
+    }
+
+    @include media-breakpoint-down(md){
+        height: 26px !important;
+    }
+}
+
+.input-group{
+    border: $grey-border;
+}
+
+.input-group:focus, .input-group:hover{
+    border: 1px solid $primary;
+    transition: all 0.3s ease;
+}
+
+// textarea {
+//     overflow: hidden;
+// }
+
+.form-control{
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $text-light;
+      transition: all 0.3s ease;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: $text-light;
+      transition: all 0.3s ease;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: $text-light;
+      transition: all 0.3s ease;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $text-light;
+      transition: all 0.3s ease;
+    }
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.input-group-text{
+    padding: 0px 18px 0px;
+}
+
+.form-check{
+    min-height: auto;
+    margin-bottom: 0;
+
+    .form-check-input{
+        border: $grey-border;
+
+        &:checked{
+            background-color: $primary;
+        }
+
+        &:focus{
+            box-shadow: 0 0 0 0.2rem rgba(30, 30, 30, 18%);
+        }
+    }
+}
+
+@include media-breakpoint-down(lg){
+    textarea.form-control{
+      height: auto !important;
+    }
+}

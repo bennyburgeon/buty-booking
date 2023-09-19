@@ -1,0 +1,454 @@
+/********** BANNER CSS **********/
+.banner-box{
+    width: 827px;
+    height: 48px;
+    padding: 9px 17px 9px 17px;
+    border: 0px solid $primary;
+    background-color: $white;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 41%;
+    border-radius: 100px;
+
+    @include media-breakpoint-down(lg){
+        width: 70%;
+        height: 37px;
+    }
+
+    @include media-breakpoint-down(md){
+        position: relative;
+        width: 100%;
+        border-radius: 0px;
+        border-bottom: $grey-border-bottom;
+    }
+
+    &:before{
+        content: "";
+        width: 1px;
+        background-color: #f1efef;
+        height: 28px;
+        position: absolute;
+        left: 192px;
+        z-index: 1;
+
+        @include media-breakpoint-down(md){
+            left: 152px;
+            height: 26px;
+        }
+    }
+
+    .b-b-location{
+        width: 208px;
+    }
+
+    .b-b-search{
+        .form-control{
+            color: $primary !important;
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        svg{
+            width: 12px;
+        }
+    }
+}
+
+#banner-slider .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.banner-slider-item{
+    height: 431px;
+
+    @include media-breakpoint-down(lg){
+        height: 231px;
+    }
+
+    @include media-breakpoint-down(md){
+        height: auto;
+    }
+}
+
+#staticBackdrop .modal-fullscreen{
+    height: auto;
+
+    .location-places .search-tags{
+        padding: 11px 18px;
+        text-align: center;
+        font-size: 13px;
+        color: $primary;
+        border: $grey-border;
+        border-radius: 30px;
+        line-height: 1;
+        display: inline-block;
+        margin-right: 12px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        cursor: pointer;
+
+        @include media-breakpoint-down(md){
+            padding: 8px 12px;
+            font-size: 11px;
+        }
+
+        &:hover{
+            color: #fff !important;
+            background-color: $primary;
+        }
+    }
+}
+
+/********** COMPANY DETAIL CSS **********/
+
+.company-img{
+    width: 400px;
+    height: 400px;
+    padding: 0.5px 0.2px 0.2px 0.5px;
+    box-shadow: -14.1px -14.1px 22.5px 2.5px rgba(244, 244, 244, 0.99), 14.1px 14.1px 22.5px 2.5px rgba(74, 72, 72, 0.11);
+    border-radius: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md){
+        width: 300px;
+        height: 300px;
+    }
+
+    img{
+        padding: 8px;
+        width: 100%;
+        border-radius: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+/********** OUR CATEGORIES CSS **********/
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+}
+
+figure.effect-layla figcaption::before {
+	top: 40px;
+    right: 25px;
+    bottom: 40px;
+    left: 25px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	-webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+
+    @include media-breakpoint-down(lg){
+        top: 28px;
+        right: 16px;
+        bottom: 28px;
+        left: 16px;
+    }
+}
+
+figure.effect-layla figcaption::after {
+	top: 25px;
+    right: 44px;
+    bottom: 25px;
+    left: 44px;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+
+    @include media-breakpoint-down(lg){
+        top: 16px;
+        right: 27px;
+        bottom: 16px;
+        left: 27px;
+    }
+}
+
+figure.effect-layla p {
+	padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 0;
+	-webkit-transform: translate3d(0,-10px,0);
+    transform: translate3d(0,-10px,0);
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+
+    @include media-breakpoint-down(lg){
+        font-size: 15px;
+    }
+}
+
+figure.effect-layla img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-layla:hover img {
+	opacity: 0.7;
+	transform: scale(1.1,1.1);
+    transition: all 0.2s linear;
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.categories figure figcaption, .categories figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    max-height: 170px;
+    background: $primary;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+/********** CUSTOMER FEEDBACK CSS **********/
+
+.customer-feedback-wrap{
+    padding: 3rem;
+    border: $grey-border;
+    background-color: $white;
+    transition: all ease 0.3s;
+    margin: 20px 0px;
+
+    span{
+        width: 68px;
+        height: 2px;
+        background-color: #ebebf1;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &:hover{
+        // box-shadow: -14.1px -14.1px 22.5px 2.5px rgba(244, 244, 244, 0.99), 14.1px 14.1px 22.5px 2.5px rgba(74, 72, 72, 0.11);
+        box-shadow: 0 0 28px 0 rgba(0, 0, 0 , 10%);
+        color: $primary !important;
+        transition: all ease 0.3s;
+    }
+}
+
+#customer-feedback{
+    .item{
+        padding: 0px 25px;
+    }
+}
+
+.owl-dots .owl-dot.active span{
+    background-color: $white !important;
+}
+
+.owl-dots .owl-dot span{
+    background: $text-light !important;
+    border: solid 1px $text-light !important;
+    margin: 5px 3px !important;
+}
+
+
+/********** CTA CSS **********/
+
+.cta{
+    padding: 52px 0;
+    box-shadow: inset 5.7px 5.7px 30.1px 4.9px rgba(0, 0, 0, 0.2), inset 0px 8px 30.1px 4.9px rgba(0, 0, 0, 0.2);
+    background-color: #353535;
+}
+
+/********** FOOTER CSS **********/
+
+footer{
+    .footer-wrap{
+        ul{
+            padding: 0px;
+
+            li{
+                a{
+                    color: $text-grey;
+                    transition: all ease 0.3s;
+
+                    &:hover{
+                        color: black !important;
+                    }
+                }
+
+                &:before{
+                    content: none;
+                }
+
+            }
+
+            .social-icons{
+                a{
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 100%;
+                    background-color: $primary;
+                    display: inline-flex;
+                    align-items: center;
+                    color: $white;
+                    justify-content: center;
+                    font-size: 15px;
+                    transition: all ease .3s;
+
+                    &:hover{
+                        color: #fff !important;
+                        transition: all ease .3s;
+                    }
+                }
+
+                .fb:hover{
+                    background-color: #395693;
+                }
+
+                .tw:hover{
+                    background-color: #00A7E7;
+                }
+
+                .yt:hover{
+                    background-color: #F70000;
+                }
+
+                .li:hover{
+                    background-color: #0E72A3;
+                }
+
+                .insta:hover{
+                    background: #d6249f;
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .footer-wrap{
+            text-align: center;
+        }
+    }
+
+    .footer-menu ul li a{
+        position: relative;
+
+        &:hover{
+            color: black !important;
+        }
+
+        &:after{
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            background: $primary;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+        }
+
+        &:hover:after{
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .footer-line{
+        background-color: #c4c4c5;
+    }
+
+    .select2-container--default .select2-selection--single {
+        background-color: transparent !important;
+        border: 0 !important;
+    }
+
+    .select2-selection__arrow{
+        display: none !important;
+    }
+
+    .select2-container{
+        width: auto !important;
+    }
+
+    .select2-container .select2-selection--single .select2-selection__rendered{
+        padding-left: 0px;
+    }
+
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        color: #1e1e1e !important;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+}
+
+.select2-dropdown{
+    box-shadow: 0px 0px 13px 2px rgba(94, 92, 92, 9%), 0px 1px 10px 1px rgba(74, 72, 72, 11%);
+    border: 0px !important;
+}
+
+ .select2-results__option {
+    padding: 3px !important;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: $primary !important;
+}
+
+@include media-breakpoint-down(lg){
+    .navbar-brand{
+        width: 24%;
+    }
+}

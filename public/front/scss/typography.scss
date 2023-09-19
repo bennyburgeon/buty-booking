@@ -1,0 +1,43 @@
+.f-12{
+    font-size: 12px;
+}
+.f-13{
+    font-size: 13px;
+}
+.f-14{
+    font-size: 14px;
+
+    @include media-breakpoint-down(lg){
+        font-size: 13px;
+    }
+
+    @include media-breakpoint-down(md){
+        font-size: 11px;
+    }
+}
+.f-15{
+    font-size: 15px;
+}
+.f-16{
+    font-size: 16px;
+
+    @include media-breakpoint-down(md){
+        font-size: 14px;
+    }
+}
+.f-17{
+    font-size: 17px;
+
+    @include media-breakpoint-down(md){
+        font-size: 15px;
+    }
+}
+.f-18{
+    font-size: 18px;
+}
+.f-w-600{
+    font-weight: 600;
+}
+.line-height-1{
+    line-height: 1;
+}
