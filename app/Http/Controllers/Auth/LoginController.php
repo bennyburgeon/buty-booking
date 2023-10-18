@@ -58,10 +58,7 @@ class LoginController extends Controller
 
     public function showLoginForm()
     {
-        if (!$this->isLegal()) {
-            return redirect('verify-purchase');
-        }
-
+    
         if (!session()->has('errors')) {
             session()->put('url.encoded', url()->previous());
         }
